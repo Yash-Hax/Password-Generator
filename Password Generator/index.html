@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>password generator</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="upper">
+        <h1 class="main">Generate a</h1>
+        <h1 class="highlighted">random password</h1>
+        <p>never use an insecure password again</p>
+        <br>
+    </div>
+    <button id="btn" onclick="generate()">
+        <svg width="14" height="18" viewBox="0 0 14 18" fill="#10B981" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.30064 0.0462736C8.71692 0.177494 9 0.563541 9 1.00001V6.00001L13 6.00001C13.3729 6.00001 13.7148 6.20747 13.887 6.5382C14.0592 6.86893 14.0331 7.268 13.8192 7.57347L6.81924 17.5735C6.56894 17.931 6.11564 18.085 5.69936 17.9537C5.28309 17.8225 5 17.4365 5 17L5 12H1C0.627127 12 0.285222 11.7926 0.113024 11.4618C-0.0591735 11.1311 -0.0330591 10.732 0.180771 10.4265L7.18077 0.426549C7.43107 0.0689788 7.88436 -0.0849466 8.30064 0.0462736Z" fill="white"/>
+            </svg>Generate passwords
+    </button>
+    <hr class="line" align="center">
+    <div class="lower">
+            <div id="card1"></div>
+            <div id="card2"></div>
+            <div id="card3"></div>
+            <div id="card4"></div>
+            <button type="button" class="copy-btn" id="copy-btn1" onclick="copy(1)"><i class="fa-regular fa-copy"></i></button>
+            <button type="button" class="copy-btn" id="copy-btn2" onclick="copy(2)"><i class="fa-regular fa-copy"></i></button>
+            <button type="button" class="copy-btn" id="copy-btn3" onclick="copy(3)"><i class="fa-regular fa-copy"></i></button>
+            <button type="button" class="copy-btn" id="copy-btn4" onclick="copy(4)"><i class="fa-regular fa-copy"></i></button>
+    </div>
+    <div class="take-length">
+        <p id="p-el">Care to mention the length of your passwords?</p>
+        <input type="number" name="length" id="length" value="12" min="6" max="15">
+    </div>
+</body>
+</html>
+<script src="index.js"></script>
+<script src="https://kit.fontawesome.com/1362ca1de0.js" crossorigin="anonymous"></script>
